@@ -166,8 +166,34 @@ main p{
 
 
 
+/* style rules for form elements */
+@media screen and (min-width 480px){
+  .fieldset, .input{
+    margin-bottom: 2%;
+  }
 
+  .legend{
+    font-weight: bold;
 
+  }
+
+  .label{
+    display: block;
+    padding-top: 3%;
+  }
+
+  #submit{
+    margin-top: zero;
+    margin-bottom: zero;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+  }
+
+}
 
 
 /*style rules for footer content*/
@@ -182,6 +208,91 @@ footer a{
   color: #4645a8;
 text-decoration: none;
 }
+
+/* styles for mobile viewport */
+@media screen and (min-width 480px), print{
+  .mobile{
+    display: none;
+     }
+     /* tablet viewport: style ruel for header content */
+     span.tab-desk{
+       display: inline;
+     }
+     /* tablet viewport: style rules for nav area */
+     .nav li{
+       border-top: none;
+       display: inline-block;
+       font-size: 1.5em;
+       border-right: 1px solid #e5e9fc;
+     }
+    .nav li p:last-child{
+       border-right: none;
+
+   }
+    .nav li{
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+        }
+
+  /* tablet viewport: style rule for map */
+  .map{
+  width: 500px;
+  height: 450px;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 20px;
+  }
+
+  aside{
+    grid-column: 1 /span 1;
+}
+
+#Contact{
+
+}
+
+#rental2{
+
+}
+
+}
+
+
+
+/* style rules for table */
+table {
+   border: 1px solid #373684;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 100%;
+      }
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+  th, td {
+    border: 1px solid #373684;
+     padding: 2%;
+   }
+
+     th  {
+        background-color: #373684;
+         color: #fff;
+         font-size: 1.15em;
+         }
+
+  tr:nth-child(odd){
+    background-color: #b7b7e1;
+  }
+
 
 /* media query for tablet viewport */
 @media screen and (min-width: 550px), print{
@@ -226,6 +337,15 @@ height: 450px;
 aside{
   grid-column: 1 /span 2;
 
+}
+
+/* tablet view port: style rules for form elements  */
+.form{
+  width: 70%;
+  margin-top: zero;
+  margin-bottom: zero;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
@@ -292,4 +412,21 @@ aside{
     background-color: #fff;
     color: #000;
   }
+
+
+  /* desktop Viewport: style rules for table */
+.table{
+  width: 70%;
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.btn{
+  grid-column: 1 /span 2;
+}
+
 }
